@@ -2,12 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Ingresar al Sistema</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+    <h1>Ingresa tus datos:
+    </h1>
+<form action="servlet-auth" method="post">
+    <p><label>Nombre: </label> <input type="text" name="nombre"></p>
+    <p><label>Apellido: </label> <input type="text" name="apellido"></p>
+    <button type="submit">Ingresar</button>
+</form>
+
 </body>
 </html>
